@@ -1,0 +1,23 @@
+﻿@model DetailViewModel
+
+<h2>@Model.Title</h2>
+
+<div class="thumbnail">
+    <img src="@Model.Pie.ImageUrl" alt="" />
+    <div class="caption">
+        <h3 class="pull-right">
+            @Model.Pie.Price.ToString("c")
+        </h3>
+        <h3>
+            @Model.Pie.Name
+        </h3>
+        <h4>
+            @Model.Pie.ShortDescription
+        </h4>
+        <p>
+            <em>
+                @Model.Pie.LongDescription
+            </em>
+        </p>
+    </div>
+</div>
